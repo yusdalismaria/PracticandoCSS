@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    font-family: arial;
+}
+
+.card{
+    width: 300px;
+    padding: 0 0 30px;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px black;
+}
+
+.imagen{
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+    display: block;
+}
+
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color:brown;
+    text-align: center;
+    margin: 20px 10;
+}
+
+.texto{
+    text-align: center;
+}
+.cta{
+    display: block;
+    background: black;
+    padding: 13px 0;
+    color:wheat;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    margin-top:20px;
+    text-decoration: none;
+   
+}
+
+.goku{
+    display: block;
+    width: 300px;
+    margin: 30px auto;
+    filter: drop-shadow(10px 10px 10px gray);
+}

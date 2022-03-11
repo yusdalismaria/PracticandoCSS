@@ -1,0 +1,44 @@
+/*
+SELECTORES: DEFINEN A QUE ELEMENTOS SE LE APLICARAN LOS ESTILOS
+*/
+
+
+h2{
+    color:steelblue
+}
+
+.navegador{
+    border: 1px solid black;
+}
+
+.section{
+    border: 1px solid black;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.caritafeliz{
+    color: darkblue;
+}
+
+[href]{
+    text-decoration: none;
+}
+
+[href="https://learning.soyhenry.com/bootcamp/home"]{
+    color: darkred;
+}
+
+[href^="httsp:"]{
+color: darkolivegreen;
+}
+
+[href$="org"]{
+    background: steelblue;
+}
+
+[href*="google"]{
+    background: darksalmon;
+}

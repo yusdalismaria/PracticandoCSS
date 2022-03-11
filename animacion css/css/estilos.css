@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circle{
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    background: cadetblue;
+    border-radius: 50%;
+
+    /**animacion**/
+/* animation-name: cambiarColor;
+animation-duration: 1s; */
+/*infinite
+animation-iteration-count: infinite;
+reverse,alternate
+animation-direction: alternate;
+animation-fill-mode: both;
+animation-delay: 2s;
+animation-timing-function: ease-in;
+
+*/
+
+animation: alternate infinite cambiarColor 3s;
+}
+
+ .circle:hover{
+     animation-play-state: paused;
+ }
+
+/**animacion**/
+
+@keyframes cambiarColor{
+    /* 
+    from
+    0%{
+        background-color: crimson;
+    }
+    to
+    100%{
+        background-color: teal;
+    } 
+    */
+/* 
+    0%{
+       transform: scale(1);
+    }
+    20%{
+        transform: scale(.3);
+     }
+     40%{
+        transform: scale(.6);
+     }
+     50%{
+        transform: scale(.9);
+     }
+     60%{
+        transform: scale(1);
+     }
+     80%{
+        transform: scale(1.5);
+     }
+     100%{
+        transform: scale(1);
+     } */
+
+
+     /* 0%{
+        transform: translateX(0)
+     }
+
+     100%{
+        transform: translateX(100%) translateY(100%);    
+     } */
+
+
+     0%{
+         transform: translate(0);
+         background-color: crimson;
+     }
+
+     20%{
+        transform: translate(100%);
+        background-color: blue;
+    }
+
+
+     50%{
+         transform: translate(100%,100%);
+         background-color: greenyellow;
+     }
+
+     100%{
+        transform: translate(0,100%);
+        background-color: pink;
+    }
+}

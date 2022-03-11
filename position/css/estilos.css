@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.header{
+    height:100vh ;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    position: relative;
+}
+
+.header_content{
+width: 70%;
+}
+.header_img{
+    width: 70%;
+}
+  
+.header_tittle{
+    font-size: 3rem;
+}
+
+.header_parrafo{
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.header_cta{
+    background: cornflowerblue;
+    padding: 20px 50px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.header_wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.main{
+        height: 100vh;
+        background: #08f;
+}
+.container{
+    background: bisque;
+    outline: 1px solid black;
+
+    min-height: 80vh;
+    width: 93%;
+    
+    margin:0 auto;
+    margin-top:40px ;
+
+    padding: 10px;
+}
+
+
+.position{
+    background: darkslateblue;
+    color: white;
+
+    width: 120px;
+    height: 120px;
+
+    display: grid;
+    place-items: center;
+    
+    margin-bottom: 20px;
+}
+
+.relative{
+    position: relative;
+    /* 
+    desplaza el elemento basado en su posicion original
+    top:20px;
+    left:20px;
+    bottom:20px;
+    right: 20px; */
+}
+
+/*  Propiedad de apilamiento
+
+.relative:nth-of-type(3){
+
+background-color: crimson;
+bottom: 40px;
+left: 20px;
+
+Dependiendo del indice, se superpone un elemento a otro
+z-index:0;
+
+} */
+
+.absolute{
+    background: salmon;
+
+    /*
+    Se desplaza en base a su ancesto posicionado, no en base a su posicion original
+    */
+    
+}

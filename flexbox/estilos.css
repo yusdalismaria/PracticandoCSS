@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 400px;
+    max-width: 600px;
+    height: 500px;
+    outline: 2px solid crimson;
+    margin: 20px auto;
+    display: flex;
+    /* flex-direction: column-reverse; 
+        flex-wrap:wrap-reverse;
+        flex-flow: (direccion)column wrap;
+    */
+
+    /*Alinear elementos
+        align items
+        align content
+        justify content  flex-start por defecto-> alinear los elementos en el main axis
+    */
+    /* justify-content: center;
+    align-items:center ; 
+       align-content: center;*/
+ 
+
+}
+
+.item{
+    width: 80px;
+    height: 80px;
+    background: darkcyan;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 80px;
+    order:0;
+    flex-grow: 1;
+}
+
+.item1{
+    order:1;
+}
+
+.item2{
+    background-color: cornflowerblue;
+}
+
+.item3{
+    background-color: aqua;
+}
+
+.item4{
+    background-color: burlywood;
+    order:-1;
+}
+
+
+
+/*
+* Modulo creado para diseñar layouts flexibles
+* Es unidimensional
+* Tiene un comportamiento de fila -flexbox-
+* Flex-direction
+* flex-wrap comportamiento de los items del contenedor
+*   order: cambiar el orden de los elementos (menor a mayor)
+*   grow:
+*/
